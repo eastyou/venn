@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "venn"
+version = "0.1.0"
+description = "韦恩图：集合规则、交集并集差集与可打印练习纸"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "eastyou" }]
+keywords = ["education", "math", "set", "venn", "worksheet", "printable", "svg"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Environment :: Console",
+  "Topic :: Education",
+]
+dependencies = []
+
+[project.scripts]
+venn = "venn.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/eastyou/venn"
+Source = "https://github.com/eastyou/venn"
+
+[tool.setuptools]
+packages = ["venn"]
